@@ -1,0 +1,134 @@
+body {
+  text-align: center;
+  background-color: #283149;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #DBEDF3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DA0463;
+
+}
+
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
+}
+
+.set {
+  margin: 0 auto;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid #404B69;
+  font-size: 5rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+  cursor: pointer;
+  scale: 95%;
+  transition: .1s all ease-in-out;
+}
+
+.play {
+  scale: 100%;
+  border-width:15px ;
+}
+
+.klong {
+  position: relative;
+  width: 70%;
+  min-height: 27rem;
+  background-color: white;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 25px;
+}
+
+.img {
+  position: absolute;
+  scale: 100%;
+  transition: .2s all ease-in-out;
+}
+
+.crash {
+  bottom: 0;
+  left: 20%;
+}
+
+.kick {
+    bottom: 0;
+    left: 50%;
+    translate: -50%;
+}
+
+.snare {
+  z-index: 1030;
+  bottom: 0;
+  right: 20%;
+}
+
+.tom1{
+  bottom: 30%;
+  left: 35%;
+}
+
+.tom2 {
+  bottom: 30%;
+  right: 35%;
+}
+
+.tom3 {
+  bottom: 0;
+  left: 25%;
+}
+
+.tom4 {
+  bottom: 0;
+  right: 25%;
+}
+
+.active {
+  scale: 110%;
+}
+
+@media only screen and (max-width:1060px) {
+    .crash{
+      left: 5%;
+    }
+    .snare {
+      right: 5%;
+    }
+    .tom1 {
+      left: 20%;
+    }
+    .tom2 {
+      right: 20%
+    }
+}
